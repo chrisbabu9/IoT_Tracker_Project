@@ -1,0 +1,44 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid"
+      }
+    },
+    "devices": {
+      "$deviceId": {
+        "meta": {
+          ".read": "auth != null && root.child('devices/' + $deviceId + '/meta/owner').val() === auth.uid",
+          "owner": {
+            ".read": "auth != null",
+            ".write": "auth != null && (!data.exists() || data.val() === auth.uid) && (newData.val() === auth.uid || !newData.exists())"
+          },
+          "$field": {
+            ".write": "auth != null && root.child('devices/' + $deviceId + '/meta/owner').val() === auth.uid"
+          }
+        },
+        "history": {
+          ".read": "auth != null && root.child('devices/' + $deviceId + '/meta/owner').val() === auth.uid",
+          ".indexOn": ["srv"],
+          "$pushId": {
+            ".write": "auth != null && !newData.exists() && root.child('devices/' + $deviceId + '/meta/owner').val() === auth.uid"
+          }
+        },
+        "commands": {
+          ".read": "auth != null && root.child('devices/' + $deviceId + '/meta/owner').val() === auth.uid",
+          ".write": "auth != null && root.child('devices/' + $deviceId + '/meta/owner').val() === auth.uid",
+          ".indexOn": ["status"]
+        },
+        "config": {
+          ".read": "auth != null && root.child('devices/' + $deviceId + '/meta/owner').val() === auth.uid",
+          ".write": "auth != null && root.child('devices/' + $deviceId + '/meta/owner').val() === auth.uid"
+        },
+        "lastSeenNear": {
+          ".read": "auth != null && root.child('devices/' + $deviceId + '/meta/owner').val() === auth.uid",
+          ".write": "auth != null && root.child('devices/' + $deviceId + '/meta/owner').val() === auth.uid"
+        }
+      }
+    }
+  }
+}

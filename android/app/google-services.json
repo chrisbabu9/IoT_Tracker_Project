@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "597725606100",
+    "firebase_url": "https://trackpoint-app-f55df-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "trackpoint-app-f55df",
+    "storage_bucket": "trackpoint-app-f55df.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597725606100:android:e2f4bf563e591478ef0b41",
+        "android_client_info": {
+          "package_name": "com.trackpoint.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7aStfX0wnmEaBjRy8CbeSX1vqJ3s61-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
