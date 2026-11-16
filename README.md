@@ -8,14 +8,6 @@ The mobile application is built using **Flutter** and can be found in the `lib/`
 ## Hardware & PCB
 The hardware consists of a custom-designed PCB built around the ESP32 and SIM7080G (LTE-M/NB-IoT). Power management is handled via a TP4056 charging circuit and a boost converter, allowing the device to run off a 3.7V 2000mAh Li-Po battery.
 
-The KiCad source files (`.kicad_sch`, `.kicad_pcb`, and `.kicad_pro`) are located in the root directory. 
-
-### 3D PCB Layout (Front)
-![Schematic](images/schematics.png)
-### 3D PCB Layout (Back)
-![Schematic](images/TrackPoint_v1_kicad2png.png)
-
-
 ## 🛠️ Getting Started (Software)
 Before running ensure build with:
 
@@ -30,3 +22,9 @@ To build the Flutter app, ensure you have the Flutter SDK installed:
 flutter pub get
 flutter run
 ```
+The KiCad source files are not uploaded. Request for exact setup.
+
+### 3D PCB Layout (Front)
+![Schematic](images/schematics.png)
+### 3D PCB Layout (Back)
+![Schematic](images/TrackPoint_v1_kicad2png.png)
