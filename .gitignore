@@ -61,3 +61,12 @@ app.*.map.json
 # Repomix
 repomix-output.xml
 tools/repomix.index
+
+# Internal development docs (exclude, keep README.md)
+rules.md
+skill.md
+status.md
+tests.md
+android/build_log.md
+
+# Repomix outputs already there, keep them
