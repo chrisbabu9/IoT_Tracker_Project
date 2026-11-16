@@ -46,3 +46,18 @@ app.*.map.json
 
 # Widget Preview related
 .widget_preview/
+# Flutter build output
+/android/build/
+/assets/AssetManifest.bin
+/assets/FontManifest.json
+/assets/NOTICES.Z
+/assets/NativeAssetsManifest.json
+/assets/isolate_snapshot_data
+/assets/kernel_blob.bin
+/assets/vm_snapshot_data
+/assets/shaders/
+/assets/packages/
+
+# Repomix
+repomix-output.xml
+tools/repomix.index
