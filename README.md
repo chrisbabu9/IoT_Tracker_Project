@@ -11,9 +11,9 @@ The hardware consists of a custom-designed PCB built around the ESP32 and SIM708
 The KiCad source files (`.kicad_sch`, `.kicad_pcb`, and `.kicad_pro`) are located in the root directory. 
 
 ### 3D PCB Layout (Front)
-![Schematic](images/schematic.png)
+![Schematic](images/schematics.png)
 ### 3D PCB Layout (Back)
-![Schematic](images/Trackpoint_v1_kicad2png.png)
+![Schematic](images/TrackPoint_v1_kicad2png.png)
 
 
 ## 🛠️ Getting Started (Software)
